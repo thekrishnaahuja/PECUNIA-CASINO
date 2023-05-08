@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casino</title>
+    <script src="cas.js"></script>
+</head>
+<body>
+    <style>
+        *{
+            text-align:center;
+        }
+        .welcome{
+            position: relative;
+        }
+        .welcome h2{
+            position: absolute;
+            font-size: 34px;
+            font-family: sans-serif;
+            width: 300px;
+            padding: 20px;
+            text-shadow: 3px 0px;
+            background-color: rgb(141, 135, 135);
+            color: rgb(5, 5, 5);
+            top: 10px;
+            border-radius: 20px;
+            right: 37%;
+            border: 2px solid rgb(0, 0, 0);
+            animation: rang 10s infinite forwards;
+        }
+
+        @keyframes rang{
+            0%{
+                text-shadow: 5px 5px 10px rgb(228, 79, 79);
+            }
+            10%{
+                text-shadow: 5px 5px 10px rgb(227, 27, 27);
+            }
+            
+
+            20%{
+                text-shadow: 5px 5px 10px rgb(203, 156, 102);
+            }
+
+            30%{
+                text-shadow: 5px 5px 10px rgb(254, 178, 0);
+            }
+
+            40%{
+                text-shadow: 5px 5px 10px rgb(217, 91, 226);
+            }
+            50%{
+                text-shadow: 5px 5px 10px rgb(152, 13, 227);
+            }
+            60%{
+                text-shadow: 5px 5px 10px rgb(44, 180, 230);
+            }
+            70%{
+                text-shadow: 5px 5px 10px rgb(7, 67, 208);
+            }
+            80%{
+                text-shadow: 5px 5px 10px rgb(129, 79, 228);
+            }
+            90%{
+                text-shadow: 5px 5px 10px rgb(124, 7, 227);
+            }
+            100%{
+                text-shadow: 5px 5px 10px rgb(84, 75, 75);
+            }
+        }
+
+        .welcome h3{
+            position: absolute;
+            top: 130px;
+            right: 35%;
+            font-size: 35px;
+            font-family: monospace;
+            letter-spacing: 1px;
+            text-shadow: 2px 1px;
+            border: 2px solid rgb(89, 87, 87);
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .welcome h3 .enj{
+            font-size: 19px;
+            text-shadow: none;
+            right: 46.5%;
+        }
+        .lc{
+            position: absolute;
+            top: 280px;
+            right: 41.7%;
+            width: 200px;
+            height: 40px;
+            padding: 5px;
+            font-size: 39px;
+            background-color: rgb(9, 9, 9);
+            color: white;
+            text-align: center;
+        }
+        .main-game{
+            background-color: black;
+        }
+        .game-screen{
+            position: absolute;
+            width: 800px;
+            max-width: 800px;
+            height: 400px;
+            max-height: 400px;
+            /* background-color: blue; */
+            border: 5px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px 10px rgb(61, 68, 67);
+            top: 380px;
+            right: 18.7%;
+            display: inline-flex;
+        }
+
+        #game-screen-divisions-1{
+            width: 33.3%;
+            height: 400px;
+            background-color: rgb(171, 173, 173);
+            border: 8px solid black;
+        }
+
+        #game-screen-divisions-2{
+            width: 33.3%;
+            height: 400px;
+            background-color: rgb(78, 76, 92);
+            border: 8px solid black;
+        }
+
+        #game-screen-divisions-3{
+            width: 33.4%;
+            height: 400px;
+            background-color: rgb(49, 47, 41);
+            border: 8px solid black;
+        }
+        #kk{
+            color: black;
+            font-size: larger;
+        }
+
+        #pull-chamber{
+            position: absolute;
+            width:200px;
+            height: 200px;
+            top: 380px;
+            right: 20px;
+        }
+        #pull-chamber button{
+            font-size: 30px;
+            background-color: black;
+            color: white;
+            border: 4px solid white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .winner{
+            position: absolute;
+            width: 440px;
+            height: 100px;
+            top: 850px;
+            right: 33%;
+            background-color: rgb(14, 14, 15);
+            border-radius: 20px;
+        }
+        #won{
+            position: relative;
+            font-size: 65px;
+            bottom: 40px;
+            color: white;
+        }
+
+        .winner:hover{
+            border: 2px solid black;
+            box-shadow: 5px 5px 1px 5px rgb(212, 142, 218);
+        }
+
+        body{
+            background-color: rgb(67, 66, 61);
+        }
+        
+        #full-web{
+            /* max-width: ; */
+            position: absolute;
+            width: 80%;
+            text-align:  center;
+            width: 1300px;
+            height: 1000px;
+            background-color: rgb(116, 123, 123);
+            top: 30px;
+            right: 20%;
+            border-radius: 50px;
+        }
+        #all-day{
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 20px;
+            right: 20px;
+            border-radius:300px;
+        }
+
+    </style>
+    <!-- ////////////////////// -->
+    <div id="full-web">
+        <div id="main-full">
+            <div class="welcome">
+                <h2>PECUNIA CASINO</h2>
+                <h3 id="welcome-child">welcome <span class="enj"> - enjoy your game</span></h3>
+            </div>
+            
+            <div  id="pull-chamber">
+                <img id="img-pull" src="IMG_20230501_201434.jpg">
+                <button onclick ="start()">PULL DOWN</button>
+            </div>
+        
+            <div class="main-game">
+                <h3 class="lc">Jackpot</h3>
+        
+                <div class="game-screen">
+                    <div id="game-screen-divisions-1">
+                        
+                    </div>
+                    <div id="game-screen-divisions-2">
+        
+                    </div>
+                    <div id="game-screen-divisions-3">
+                        
+                    </div>
+                </div>
+        
+                <div class="prev-screen-div">
+                    <h3 class="prev-screen"></h3>
+                </div>
+            </div>
+        
+            <div class="winner">
+                <h2 id="won">lucky?</h2>
+            </div>
+        
+        </div> 
+        <img id="all-day" src="open-allday.jpg"  alt="something is missing">
+    </div>
+    
+
+</body>
+</html>
+<!-- ////////////////////////////////////////////// -->

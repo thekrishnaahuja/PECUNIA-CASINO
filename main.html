@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(casino-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #main-full{
+            position: absolute;
+            width:70%;
+            height: 900px;
+            
+            top: 30px;
+            left: 290px;
+        }
+        #p-c{
+            font-size: 60px;
+            font-family:'Courier New', Courier, monospace;
+            position: absolute;
+            top: 10px;
+            left: 34%;
+            padding: 10px;
+            border-radius: 40px;
+            background-color: rgb(118, 118, 118);
+            animation: besharam-rang 10s infinite forwards;
+        }
+        @keyframes besharam-rang{
+            10%{
+                text-shadow: 5px 5px 5px rgb(253, 70, 4);
+            }
+            20%{
+                text-shadow: 5px 5px 5px rgb(251, 222, 3);
+            }
+            30%{
+                text-shadow: 5px 5px 5px rgb(174, 253, 4);
+            }
+            40%{
+                text-shadow: 5px 5px 5px rgb(4, 253, 153);
+            }
+            50%{
+                text-shadow: 5px 5px 5px rgb(4, 141, 253);
+            }
+            50%{
+                text-shadow: 5px 5px 5px rgb(120, 4, 253);
+            }
+            60%{
+                text-shadow: 5px 5px 5px rgb(207, 4, 253);
+            }
+            70%{
+                text-shadow: 5px 5px 5px rgb(220, 126, 184);
+            }
+            80%{
+                text-shadow: 5px 5px 5px rgb(253, 4, 4);
+            }
+        }
+        #games{
+            display: inline-flex;
+            position: absolute;
+            top: 400px;
+            left: -1.2%;
+        }
+        #game-1{
+            /* position: absolute; */
+            background-image: url(jackpot.jpg);
+            width: 450px;
+            height: 350px;
+            border-radius: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 15px 15px 20px black;
+        }
+        
+        .game-1-name{
+            position: absolute;
+            font-size: 45px;
+            top: 80px;
+            left: 100px;
+            padding: 20px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            /* background-color: aqua; */
+        }
+        /* #game-1:hover{
+            opacity: 0.5;
+        } */
+        #game-2{
+            /* position: absolute; */
+            background-image: url(blackjack.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 450px;
+            height: 350px;
+            margin: 0px 100px;
+            border-radius: 40px;
+            box-shadow: 15px 15px 20px black;
+        }
+        .game-2-name{
+            position: absolute;
+            font-size: 45px;
+            top: 80px;
+            left: 605px;
+            padding: 20px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            /* background-color: aqua; */
+        }
+        #game-3{
+            /* position: absolute; */
+            background-image: url(match.jpg);
+            width: 450px;
+            height: 350px;
+            border-radius: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 15px 15px 20px black;
+        }
+        .game-3-name{
+            position: absolute;
+            font-size: 45px;
+            top: 80px;
+            left: 1210px;
+            padding: 20px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            /* background-color: aqua; */
+        }
+    </style>
+    <div id="main-full-all">
+        <!-- <p style=""></p> -->
+        <div id="main-full">
+            <h1 id="p-c">PECUNIA CASINO</h1>
+    
+            <div id="games">
+                <a href="casino-1/cas.html"><div id="game-1">
+                    <h2 class="game-1-name">JACKPOT</h2>
+                </div></a>
+                <!-- /////////////////// -->
+                <a href="casino-2/cas-2.html"><div id="game-2">
+                    <h2 class="game-2-name">BLACK JACK</h2>
+                </div></a>
+                <!-- ////////////////// -->
+                <a href="casino-3/match.html"><div id="game-3">
+                    <h2 class="game-3-name">MATCH</h2>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

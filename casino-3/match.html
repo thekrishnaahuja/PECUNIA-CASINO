@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #p-c{
+        position: absolute;
+            font-size: 34px;
+            font-family: sans-serif;
+            width: 300px;
+            padding: 20px;
+            text-shadow: 3px 0px;
+            background-color: rgb(141, 135, 135);
+            color: rgb(5, 5, 5);
+            top: 10px;
+            border-radius: 20px;
+            right: 41%;
+            border: 2px solid rgb(0, 0, 0);
+            animation: rang 10s infinite forwards;
+        }
+        #match{
+            position: absolute;
+            top: 130px;
+            right: 45.5%;
+            font-size: 35px;
+            font-family: monospace;
+            letter-spacing: 1px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px black;
+            font-weight: bolder;
+            animation: colage 20s infinite forwards;
+        }
+        @keyframes colage{
+            10%{
+                text-shadow: 5px 5px 10px white;
+            }
+            20%{
+                text-shadow: 5px 5px 10px rgb(38, 36, 36);
+            }
+            30%{
+                text-shadow: 5px 5px 10px rgb(131, 127, 127);
+            }
+            40%{
+                text-shadow: 5px 5px 10px rgb(255, 255, 255);
+            }
+            50%{
+                text-shadow: 5px 5px 10px rgb(37, 35, 35);
+            }
+            60%{
+                text-shadow: 5px 5px 10px rgb(124, 119, 119);
+            }
+            70%{
+                text-shadow: 5px 5px 10px rgb(255, 255, 255);
+            }
+            80%{
+                text-shadow: 5px 5px 10px rgb(36, 34, 34);
+            }
+            90%{
+                text-shadow: 5px 5px 10px rgb(141, 138, 138);
+            }
+            
+        }
+        #rule{
+            position: absolute;
+            font-family: monospace;
+            font-size: 25px;
+            border: 3px dotted black;
+            top: 250px;
+            left: 370px;
+            padding: 10px;
+        }
+
+        @keyframes rang{
+            0%{
+                text-shadow: 5px 5px 10px rgb(228, 79, 79);
+            }
+            10%{
+                text-shadow: 5px 5px 10px rgb(227, 27, 27);
+            }
+            
+
+            20%{
+                text-shadow: 5px 5px 10px rgb(203, 156, 102);
+            }
+
+            30%{
+                text-shadow: 5px 5px 10px rgb(254, 178, 0);
+            }
+
+            40%{
+                text-shadow: 5px 5px 10px rgb(217, 91, 226);
+            }
+            50%{
+                text-shadow: 5px 5px 10px rgb(152, 13, 227);
+            }
+            60%{
+                text-shadow: 5px 5px 10px rgb(44, 180, 230);
+            }
+            70%{
+                text-shadow: 5px 5px 10px rgb(7, 67, 208);
+            }
+            80%{
+                text-shadow: 5px 5px 10px rgb(129, 79, 228);
+            }
+            90%{
+                text-shadow: 5px 5px 10px rgb(124, 7, 227);
+            }
+            100%{
+                text-shadow: 5px 5px 10px rgb(84, 75, 75);
+            }
+        }
+        #main-grid{
+            position: relative;
+        }
+        #grid{
+            position: absolute;
+            top: 350px;
+            left: 17%;
+            background-color: rgb(111, 111, 111);
+            width: 68%;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 10px 10px 20px black;
+            animation: bg 5s infinite forwards;
+        }
+        @keyframes bg {
+            10%{
+                background-color: rgb(221, 150, 221);
+            }
+            20%{
+                background-color: rgb(216, 154, 154);
+            }
+            30%{
+                background-color: rgb(99, 130, 167);
+            }
+            40%{
+                background-color: rgb(112, 95, 122);
+            }
+            50%{
+                background-color: rgb(100, 75, 100);
+            }
+            60%{
+                background-color: rgb(181, 106, 106);
+            }
+            70%{
+                background-color: rgb(137, 143, 171);
+            }
+            80%{
+                background-color: rgb(128, 105, 209);
+            }
+        }
+        #grid img{
+            margin: 10px 10px;
+            background-size: cover;
+            width: 217px;
+            height: 232px;
+        }
+        body{
+            background-color: rgb(74, 74, 73);
+        }
+        #result{
+            position: absolute;
+            bottom: 40px;
+            left: 42.33%;
+            width: 400px;
+            /* height: 100px; */
+            background-color: rgb(171, 231, 231);
+            font-size: 25px;
+            align-items: center;
+            text-align: center;
+            border-radius: 40px;
+            box-shadow: 10px 10px 20px green;
+        }
+        
+    </style>
+    <h2 id="p-c">PECUNIA CASINO</h2>
+    <h3 id="match">MATCH</h3>
+    <p id="rule">MATCH EVERY PAIR OF CARDS TO WIN.</p>
+    <div id="main-grid">
+        <div id="grid"></div>
+    </div>
+    <button id="result">
+        <h1 id="result-child">HOORAY!!</h1>
+    </button>
+    <script src="match.js"></script>
+</body>
+</html>
